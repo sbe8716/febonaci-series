@@ -1,0 +1,36 @@
+import java.util.*;
+class febonaci
+{
+int n,i;
+void febo(int n)
+{
+int sum;
+int f1=0;
+int f2=1;
+System.out.println(""+f1);
+System.out.println(""+f2);
+for(i=3;i<=n;i++)
+{
+sum=f1+f2;
+System.out.println(""+sum);
+f1=f2;
+f2=sum;
+}
+}
+}
+
+class demo1
+{
+public static void main(String args[])
+{
+int n1;
+Scanner sc=new scanner(System.in);
+System.out.println("enter your no. to show febonaci series")
+n1=sc.nextInt();
+febonaci f=new febonaci();
+f.febo(n1);
+}
+}
+
+
+
